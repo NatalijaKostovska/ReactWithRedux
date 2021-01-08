@@ -8,7 +8,7 @@ const reducer = (state = initalState, action) => {
                 ...state,
                 list: [...state.list, action.payload],
             };
-        case 'DELETE_ITEM':
+        case 'DELETE_ITEM': 
             return{
                 ...state,
                 list: state.list.filter((l)=>l.id !== action.payload)
